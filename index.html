@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Thee Order - QR Menu</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Thee Order - Restaurant Menu</h1>
+        <div id="menu" class="menu-container"></div>
+        <div id="cart" class="cart-container">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="total-price">0</span> INR</p>
+            <button onclick="generateBill()">Generate Bill</button>
+        </div>
+    </div>
+
+    <!-- QR Code Simulation -->
+    <div id="qr-code-section">
+        <h3>Scan QR Code to Load Menu</h3>
+        <button onclick="loadMenu()">Simulate QR Scan</button>
+    </div>
+</body>
+</html>
